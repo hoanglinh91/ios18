@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="testViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Diamond.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-b1-h99">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="l9s-cN-qkS"/>
+                                    <constraint firstAttribute="width" constant="221" id="sW1-IW-JYS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orx-Vo-Z1g">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="1WI-wR-W7s"/>
+                                    <constraint firstAttribute="height" constant="31" id="KRC-6t-0RF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Orx-Vo-Z1g" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Ec4-Cm-OfY"/>
+                            <constraint firstAttribute="bottom" secondItem="Orx-Vo-Z1g" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KJm-zF-RUi"/>
+                            <constraint firstItem="dhz-b1-h99" firstAttribute="top" secondItem="3" secondAttribute="top" constant="44" id="OKm-TB-3ez"/>
+                            <constraint firstItem="Orx-Vo-Z1g" firstAttribute="centerX" secondItem="dhz-b1-h99" secondAttribute="centerX" type="default" id="oSg-5B-bMU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IAmRich" destination="Orx-Vo-Z1g" id="per-lP-hlf"/>
+                        <outlet property="diamond" destination="dhz-b1-h99" id="qpC-dD-aEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Diamond.jpg" width="1095" height="694"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
