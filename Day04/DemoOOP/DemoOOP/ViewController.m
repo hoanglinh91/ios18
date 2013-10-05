@@ -45,7 +45,7 @@
     // Đặt cảnh 2
     [scene setLevel:2];
     
-    // in ra background nhân vật trong cảnh 1
+    // in ra background nhân vật trong cảnh 2
     NSLog(@"%@ %@ %@\n",scene.currentBackground,scene.currentEnemy,scene.currentPlayer);
     
 }
@@ -63,11 +63,14 @@
     siberian_Tiger->_id = @"012445";  //Dùng mũi tên truy xuất biến public của đối tượng có kiểu khác
     [siberian_Tiger sound]; //Cho con hổ kêu
     //NSLog(@"Origin is %@", [siberian_Tiger origin]); //Sử dụng hàm getter
-    Cat * meo = [[Cat alloc] initWithName:@"meo mun"];
-    [meo sound];
     
-    Gorilla * tinhTinh = [[Gorilla alloc] initWithName:@"linh truong"];
-    [tinhTinh sound];
+    // mèo kêu
+    Cat * cat = [[Cat alloc] initWithName:@"Black Cat"];
+    [cat sound];
+    
+    // tinh tinh kêu
+    Gorilla * monkey = [[Gorilla alloc] initWithName:@"Monkey"];
+    [monkey sound];
     
 }
 

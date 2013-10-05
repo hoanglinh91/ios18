@@ -58,6 +58,7 @@
 		66061F4718000DF300CEAD61 /* lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lake.jpg; sourceTree = "<group>"; };
 		66061F4918000E0100CEAD61 /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
 		66061F4B18000E0B00CEAD61 /* whale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whale.png; sourceTree = "<group>"; };
+		6658686E18002F190060EB6E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		E2F7E53F17FEE3240030CF88 /* DemoOOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoOOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7E54217FEE3240030CF88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2F7E54417FEE3240030CF88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,6 +159,7 @@
 		E2F7E54117FEE3240030CF88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6658686E18002F190060EB6E /* SpriteKit.framework */,
 				E2F7E54217FEE3240030CF88 /* Foundation.framework */,
 				E2F7E54417FEE3240030CF88 /* CoreGraphics.framework */,
 				E2F7E54617FEE3240030CF88 /* UIKit.framework */,
