@@ -21,6 +21,7 @@
 		66696ACE18044AA100729739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66696AB018044AA100729739 /* UIKit.framework */; };
 		66696AD618044AA100729739 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66696AD418044AA100729739 /* InfoPlist.strings */; };
 		66696AD818044AA200729739 /* sudokuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66696AD718044AA200729739 /* sudokuTests.m */; };
+		66F227DA18048A5C0063F395 /* sudoku.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66F227D918048A5C0063F395 /* sudoku.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		66696AD318044AA100729739 /* sudokuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sudokuTests-Info.plist"; sourceTree = "<group>"; };
 		66696AD518044AA100729739 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66696AD718044AA200729739 /* sudokuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sudokuTests.m; sourceTree = "<group>"; };
+		66F227D918048A5C0063F395 /* sudoku.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sudoku.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		66696AB218044AA100729739 /* sudoku */ = {
 			isa = PBXGroup;
 			children = (
+				66F227D918048A5C0063F395 /* sudoku.txt */,
 				66696ABB18044AA100729739 /* AppDelegate.h */,
 				66696ABC18044AA100729739 /* AppDelegate.m */,
 				66696ABE18044AA100729739 /* Main.storyboard */,
@@ -231,6 +234,7 @@
 				66696AC518044AA100729739 /* Images.xcassets in Resources */,
 				66696AB718044AA100729739 /* InfoPlist.strings in Resources */,
 				66696AC018044AA100729739 /* Main.storyboard in Resources */,
+				66F227DA18048A5C0063F395 /* sudoku.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +464,7 @@
 				66696ADD18044AA200729739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66696ADE18044AA200729739 /* Build configuration list for PBXNativeTarget "sudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				66696AE018044AA200729739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
