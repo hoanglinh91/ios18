@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66232C521805331300E9145C /* sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 66232C511805331300E9145C /* sudoku.m */; };
 		66696AAD18044AA100729739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66696AAC18044AA100729739 /* Foundation.framework */; };
 		66696AAF18044AA100729739 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66696AAE18044AA100729739 /* CoreGraphics.framework */; };
 		66696AB118044AA100729739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66696AB018044AA100729739 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66232C501805331300E9145C /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
+		66232C511805331300E9145C /* sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sudoku.m; sourceTree = "<group>"; };
 		66696AA918044AA100729739 /* sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66696AAC18044AA100729739 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66696AAE18044AA100729739 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				66696ABE18044AA100729739 /* Main.storyboard */,
 				66696AC118044AA100729739 /* ViewController.h */,
 				66696AC218044AA100729739 /* ViewController.m */,
+				66232C501805331300E9145C /* sudoku.h */,
+				66232C511805331300E9145C /* sudoku.m */,
 				66696AC418044AA100729739 /* Images.xcassets */,
 				66696AB318044AA100729739 /* Supporting Files */,
 			);
@@ -255,6 +260,7 @@
 			files = (
 				66696AC318044AA100729739 /* ViewController.m in Sources */,
 				66696ABD18044AA100729739 /* AppDelegate.m in Sources */,
+				66232C521805331300E9145C /* sudoku.m in Sources */,
 				66696AB918044AA100729739 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
