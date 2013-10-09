@@ -12,7 +12,7 @@
 @interface ViewController ()
 {
     @public
-    int _id;
+    int _id; // instant variable add button.tag to use
 }
 @end
 
@@ -71,7 +71,7 @@
     }
     
     x += 20;
-    
+    // add 9 button picker value
     for (int i=1; i<10; i++) {
         UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [myButton setTitle:[NSString stringWithFormat:@"%d",i] forState:UIControlStateNormal];
@@ -87,6 +87,8 @@
 }
 
 -(void)pickNumber:(UIButton *)button{
+    
+    // find button clicked & change value
     for (UIButton * mybutton in self.view.subviews) {
         if ([mybutton isKindOfClass:[UIButton class]] && mybutton.tag == _id) {
             [mybutton setTitle:[NSString stringWithString:button.titleLabel.text] forState:UIControlStateNormal];
@@ -102,6 +104,7 @@
     }
 }
 
+// check number already to use
 -(void)checkNumber:(int) pos{
     int arr[10][10];
     BOOL mark[10];
@@ -169,6 +172,12 @@
 
 -(void)myButtonIsPressed:(UIButton *) button{
 
+    for (UIButton * mybutton in self.view.subviews) {
+        if ([mybutton isKindOfClass:[UIButton class]] && mybutton.tag > 100) {
+            mybutton.enabled = NO;
+        }
+    }
+    
     _id = button.tag;
     [self checkNumber:button.tag];
 }
