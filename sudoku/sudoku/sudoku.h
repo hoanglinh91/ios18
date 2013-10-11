@@ -15,5 +15,5 @@
 }
 
 -(NSMutableArray *)getData;
--(void)getResult:(NSArray *)arr;
+-(NSArray *)getResult:(int *)arr;
 @end

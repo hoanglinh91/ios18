@@ -14,6 +14,8 @@
     @public
     int _id; // instant variable add button.tag to use
 }
+@property (nonatomic, strong) sudoku *tmp;
+- (IBAction)solve:(id)sender;
 @end
 
 @implementation ViewController
@@ -32,8 +34,8 @@
     
     // get data
     
-    sudoku *tmp = [[sudoku alloc] init];
-    NSArray * array = [[NSArray alloc] initWithArray:[tmp getData]];
+    self.tmp = [[sudoku alloc] init];
+    NSArray * array = [[NSArray alloc] initWithArray:[self.tmp getData]];
     
     int x = 100,y = 50,space = 5, height = 20,width = 20, buttonPerRow = 9, index = 0;
     
@@ -188,4 +190,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)solve:(id)sender {
+
+    int array[82];
+
+    for (UIButton * button in self.view.subviews) {
+        if ([button isKindOfClass:[UIButton class]] && button.tag < 100) {
+            array[button.tag] = [button.titleLabel.text integerValue];
+        }
+    }
+    
+    NSArray *arr = [[NSArray alloc] initWithArray:[self.tmp getResult:array]];
+    
+    for (UIButton * button in self.view.subviews) {
+        if ([button isKindOfClass:[UIButton class]] && button.tag && button.tag < 100) {
+           // NSLog(@"%d",button.tag);
+            [button setTitle:[NSString stringWithFormat:@"%@",[arr objectAtIndex:button.tag-1]] forState:UIControlStateNormal];
+        }
+    }
+}
 @end
